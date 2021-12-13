@@ -76,18 +76,14 @@ function App() {
               <div>
                 <Dropdown option={selectedOption} callback={setOptionNews} />
               </div>
-              {isLoading ? (
-                <Spinner />
-              ) : (
-                <>
-                  <Cards posts={posts} />
-                  <Pagination active={page} callback={setPage} />
-                </>
-              )}
+              {isLoading ? <Spinner /> : <Cards posts={posts} />}
             </>
           ) : (
             faves && <Cards posts={faves} />
           )}
+          <div className={styles.paginationContainer}>
+            <Pagination active={page} callback={setPage} />
+          </div>
         </section>
       </main>
     </>
