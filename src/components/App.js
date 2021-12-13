@@ -1,5 +1,6 @@
 // Hooks
 import { useEffect, useState } from "react";
+import { useGlobalContext } from "../context";
 // Styles
 import styles from "../styles/App.module.css";
 // Components
@@ -17,6 +18,7 @@ import {
 } from "../helpers/persistentData";
 
 function App() {
+  const { faves } = useGlobalContext();
   const [activeAllTab, setActiveAllTab] = useState(true);
   const [selectedOption, setSelectedOption] = useState(getPersistentOption());
   const [page, setPage] = useState(0);
@@ -69,14 +71,22 @@ function App() {
           </button>
         </nav>
         <section className={styles.section}>
-          <Dropdown option={selectedOption} callback={setOptionNews} />
-          {isLoading ? (
-            <Spinner />
-          ) : (
+          {activeAllTab ? (
             <>
-              <Cards posts={posts} />
-              <Pagination active={page} callback={setPage} />
+              <div>
+                <Dropdown option={selectedOption} callback={setOptionNews} />
+              </div>
+              {isLoading ? (
+                <Spinner />
+              ) : (
+                <>
+                  <Cards posts={posts} />
+                  <Pagination active={page} callback={setPage} />
+                </>
+              )}
             </>
+          ) : (
+            faves && <Cards posts={faves} />
           )}
         </section>
       </main>

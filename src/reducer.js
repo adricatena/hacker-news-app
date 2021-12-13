@@ -1,7 +1,4 @@
-import {
-  setPersistentFaves,
-  setPersistentFavesId,
-} from "./helpers/persistentData";
+import { setPersistentFaves } from "./helpers/persistentData";
 
 const reducer = (state, action) => {
   if (action.type === "SET_FAV") {

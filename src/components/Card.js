@@ -7,7 +7,8 @@ import { useGlobalContext } from "../context";
 
 const Card = ({ author = "", title = "", url = "", created, id }) => {
   const { faves, setFav, deleteFav } = useGlobalContext();
-  const [favIcon, setFavIcon] = useState(faves.some((fav) => fav.id === id));
+  const fav = faves && faves.some((fav) => fav.id === id);
+  const [favIcon, setFavIcon] = useState(fav);
 
   const clickOnInfo = () => {
     window.open(url, "_blank");

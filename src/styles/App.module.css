@@ -12,6 +12,7 @@
 }
 
 .button {
+  margin-bottom: 30px;
   min-width: 98px;
   height: 31px;
   padding: 3px 16px;
@@ -39,4 +40,17 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .section {
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .section > div {
+    flex-basis: 100%;
+  }
 }
