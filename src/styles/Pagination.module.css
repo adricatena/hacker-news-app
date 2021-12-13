@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 432px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.element:hover {
+  cursor: pointer;
+}
+
+.element {
+  width: 32px;
+  height: 32px;
+  padding: 9px;
+  border-radius: 6px;
+  border: solid 1px #d9d9d9;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.element > img {
+  width: 14px;
+  height: 14px;
+}
+
+.active {
+  border: none;
+  background-color: #1890ff;
+  color: white;
+}

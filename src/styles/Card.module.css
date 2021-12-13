@@ -1,0 +1,77 @@
+.container {
+  opacity: 0.9;
+  border-radius: 6px;
+  border: solid 1px #979797;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 135px;
+  min-width: 240px;
+  max-width: 550px;
+  width: 75%;
+  margin-bottom: 30px;
+}
+
+.container:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.information {
+  width: calc(100% - 68px);
+  padding: 25px;
+}
+
+.information img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.information p {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  color: #767676;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.information h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: 0.25px;
+  color: #6b6b6b;
+  margin-top: 6px;
+}
+.favContainer {
+  position: relative;
+  width: 68px;
+  height: 100%;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backgroundFav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.07;
+  border-radius: 6px;
+  background-color: #606060;
+}
+.favContainer > img {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 49%;
+  }
+}

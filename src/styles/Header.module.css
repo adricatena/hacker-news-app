@@ -1,0 +1,13 @@
+.header {
+  height: 114px;
+  box-shadow: 0 1px 4px 0 rgba(0, 21, 41, 0.12);
+  background-image: linear-gradient(to bottom, #ececec -32%, #fff 124%);
+
+  display: flex;
+  align-items: center;
+  font-family: "Libre Baskerville", serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 28px;
+  color: #3b3b3b;
+  padding-left: 10%;
+}
