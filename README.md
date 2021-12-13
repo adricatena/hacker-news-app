@@ -1,3 +1,12 @@
+# Reign Challenge - Hacker News API
+
+Web app developed by Adriano Catena for Reign.
+Get information from the 'Hacker News' public API and renders according to the layout delivered in Zeplin.
+The development was done with 'Create-React-App', using functional components, Context API, native hooks as well as custom hooks.
+Also, some required data is saved in the Local Storage (filters and favorite posts).
+
+Open [https://hacker-news-app-reign.netlify.app/](https://hacker-news-app-reign.netlify.app/) to view it in the browser.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
