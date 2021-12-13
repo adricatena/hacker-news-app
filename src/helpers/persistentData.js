@@ -1,7 +1,8 @@
 export const getPersistentOption = () => {
-  const { option } = JSON.parse(window.localStorage.getItem("filters"));
-  if (option) {
-    return option;
+  // const { option } = JSON.parse(window.localStorage.getItem("filters"));
+  const filters = getPersistentFilters();
+  if (filters.option) {
+    return filters.option;
   }
   return "Select your news";
 };

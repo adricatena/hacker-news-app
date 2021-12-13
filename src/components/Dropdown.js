@@ -25,7 +25,6 @@ const Dropdown = ({ option = "", callback }) => {
   const [selectedOption, setSelectedOption] = useState();
 
   useEffect(() => {
-    console.log(option);
     if (option.toLowerCase() === "angular") {
       setSelectedOption(options[0]);
     } else if (option.toLowerCase() === "reactjs") {
