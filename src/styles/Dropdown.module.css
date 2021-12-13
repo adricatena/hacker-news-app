@@ -1,0 +1,60 @@
+.container {
+  width: 240px;
+  margin: 35px 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.header,
+li {
+  height: 32px;
+  margin: 10px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #343434;
+}
+.container img {
+  width: 24px;
+  margin: 0 10px;
+}
+
+.header {
+  border-radius: 4px;
+  border: solid 1px #2e2e2e;
+  background-color: white;
+  padding: 5px 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.listContainer {
+  position: absolute;
+  left: 0;
+  /* 47px is because the height (32px), padding (5px) and margin (10px) of the header */
+  top: 48px;
+  z-index: 100;
+  width: 100%;
+}
+
+.listContainer > ul {
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 2px 2px 0 #dad8d8;
+  background-color: white;
+}
+
+.header > .arrow {
+  width: 10px;
+}
