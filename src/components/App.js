@@ -61,7 +61,7 @@ function App() {
             className={`${styles.button} ${activeAllTab && styles.active}`}
             onClick={() => setActiveAllTab(true)}
           >
-            All
+            All hola erasmo esto e sun cambio
           </button>
           <button
             className={`${styles.button} ${!activeAllTab && styles.active}`}
