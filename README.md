@@ -1,3 +1,8 @@
+## Version 1.0.5
+esta version es nueva cambia tal y talc osa
+
+
+
 # Reign Challenge - Hacker News API
 
 Web app developed by Adriano Catena for Reign.
